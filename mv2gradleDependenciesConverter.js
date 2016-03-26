@@ -10,11 +10,12 @@
 */
 
 function getNode(str,name){
-    var rg="<\s*"+name+"\s*>\s*([^>]+)<\s*\/\s*"+name+"\s*>";
+    var rg="<\\s*"+name+"\\s*>([^>]+)<\\s*\\/\\s*"+name+"\\s*>";
     var re=RegExp(rg,"gi");
     var rs=re.exec(str);
-    return !rs?undefined:rs[1];
+    return !rs?undefined:rs[1].trim();
 }
+
 
 function getGroupId(str){
     return getNode(str,"groupId");
