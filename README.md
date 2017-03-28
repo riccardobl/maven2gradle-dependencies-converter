@@ -2,8 +2,8 @@
 Convert maven dependencies delcaration to gradle
 
 
-#Requirements
+# Requirements
 jjs available from java8
 
-#Usage
+# Usage
 ```jjs mv2gradleDependenciesConverter.js -- pom.xml```
